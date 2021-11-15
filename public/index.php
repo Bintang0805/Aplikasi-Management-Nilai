@@ -68,7 +68,6 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" name="password">
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                     </form>
@@ -88,6 +87,10 @@
                 <div class="modal-body">
                     <form action="../process/registration/regist-process.php" method="post">
                         <div class="mb-3">
+                            <label for="no_identitas" class="form-label">NIS / NIP</label>
+                            <input type="number" class="form-control" id="no_identitas" aria-describedby="numberHelp" name="no_identitas">
+                        </div>
+                        <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -97,21 +100,20 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" name="password">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" id="flexRadioDefault1" checked value="guru" name="role">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Guru
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" id="flexRadioDefault2" value="siswa" name="role">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Siswa
                             </label>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary">Regist</button>
                     </div>
             </form>
         </div>
